@@ -7,13 +7,13 @@
 <title>Hibernate Home</title>
 </head>
 <body>
-	<center></center>
-	<form action="Register.jsp" method="post">
-		Name:<input type="text" name="name" /><br> <br> Email ID:<input
-			type="text" name="email" /><br> <br />Password:<input
-			type="password" name="password" /><br> <br> <input
-			type="submit" value="Register" />
-	</form>
+	<center>
+		<form action="Register.jsp" method="post">
+			Name:<input type="text" name="name" /><br> <br> Email ID:<input
+				type="text" name="email" /><br> <br />Password:<input
+				type="password" name="password" /><br> <br> <input
+				type="submit" value="Register" />
+		</form>
 	</center>
 </body>
 </html>
