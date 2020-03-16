@@ -16,7 +16,7 @@
 		try {
 			int i = UserDao.register(userBean);
 			if (i > 0) {
-				out.println("<center><h3>You are successfully registered</h3></center>");
+				out.println("<center><h3>You are Successfully Registered</h3></center>");
 			}
 		} catch (Exception e) {
 			out.println(e);
