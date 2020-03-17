@@ -12,7 +12,7 @@ java.util.Iterator"%>
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Criteria Object</title>
 </head>
 <body>
 	<%
@@ -24,7 +24,10 @@ java.util.Iterator"%>
 		Criteria cr = sess.createCriteria(User.class);
 
 		cr.add(Restrictions.like("name", "S%"));
-		cr.add(Restrictions.eq("id", 1));
+		//cr.add(Restrictions.eq("id", 1));
+		
+		cr.addOrder(Order.asc("name"));
+		cr.setMaxResults(5);
 
 		List<User> list = (List<User>) cr.list();
 		out.println("List of Employees::" + "<br>");
