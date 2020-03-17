@@ -5,6 +5,14 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Registration</title>
+<link
+	href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+	rel="stylesheet">
+<style>
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+</style>
 </head>
 <body>
 
@@ -16,6 +24,7 @@
 		try {
 			int i = UserDao.register(userBean);
 			if (i > 0) {
+				//out.println("<img src="/Well-Done-Applause.gif"></img>");
 				out.println("<center><h3>You are Successfully Registered</h3></center>");
 			}
 		} catch (Exception e) {

@@ -5,6 +5,14 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Hibernate Home</title>
+<link
+	href="https://fonts.googleapis.com/css?family=Quicksand&display=swap"
+	rel="stylesheet">
+<style>
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+</style>
 </head>
 <body>
 	<center>
