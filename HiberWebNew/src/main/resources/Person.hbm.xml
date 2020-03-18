@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 18-Mar-2020, 4:14:22 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.niit.hiberwebnew.Person" table="PERSON">
+		<id name="id" type="int">
+			<column name="ID" />
+			<generator class="increment" />
+		</id>
+		<property name="name" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+		<property name="emailAddress" type="java.lang.String">
+			<column name="EMAILADDRESS" />
+		</property>
+		<component name="job" class="com.niit.hiberwebnew.Job">
+			<property name="designation"></property>
+			<property name="salary"></property>
+			<property name="jobDescription"></property>
+		</component>
+	</class>
+</hibernate-mapping>

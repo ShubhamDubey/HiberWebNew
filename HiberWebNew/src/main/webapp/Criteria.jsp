@@ -25,7 +25,7 @@ java.util.Iterator"%>
 
 		cr.add(Restrictions.like("name", "S%"));
 		//cr.add(Restrictions.eq("id", 1));
-		
+
 		cr.addOrder(Order.asc("name"));
 		cr.setMaxResults(5);
 
